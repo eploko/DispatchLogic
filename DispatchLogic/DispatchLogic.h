@@ -12,4 +12,5 @@
 #import "DLEnqueue.h"
 #import "DLProperties.h"
 #import "DLTimer.h"
+#import "NSArray+DispatchLogic.h"
 #import "NSObject+DispatchLogic.h"

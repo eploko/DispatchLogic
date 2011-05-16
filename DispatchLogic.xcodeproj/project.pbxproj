@@ -18,6 +18,8 @@
 		7259C4901380E9A0002F7507 /* DLDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7259C48F1380E99F002F7507 /* DLDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7259C4931380EA8C002F7507 /* DLTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7259C4911380EA8B002F7507 /* DLTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7259C4941380EA8C002F7507 /* DLTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7259C4921380EA8B002F7507 /* DLTimer.m */; };
+		7259C4971380F4EC002F7507 /* NSArray+DispatchLogic.h in Headers */ = {isa = PBXBuildFile; fileRef = 7259C4951380F4EA002F7507 /* NSArray+DispatchLogic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7259C4981380F4EC002F7507 /* NSArray+DispatchLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 7259C4961380F4EB002F7507 /* NSArray+DispatchLogic.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		7259C48F1380E99F002F7507 /* DLDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLDelegate.h; sourceTree = "<group>"; };
 		7259C4911380EA8B002F7507 /* DLTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLTimer.h; sourceTree = "<group>"; };
 		7259C4921380EA8B002F7507 /* DLTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLTimer.m; sourceTree = "<group>"; };
+		7259C4951380F4EA002F7507 /* NSArray+DispatchLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+DispatchLogic.h"; sourceTree = "<group>"; };
+		7259C4961380F4EB002F7507 /* NSArray+DispatchLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+DispatchLogic.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				7259C4751380D9F9002F7507 /* DispatchLogic.h */,
-				7259C47A1380DD49002F7507 /* NSObject+DispatchLogic.h */,
-				7259C47B1380DD49002F7507 /* NSObject+DispatchLogic.m */,
 				7259C4821380E3F2002F7507 /* DLAsserts.h */,
 				7259C48D1380E893002F7507 /* DLBlocks.h */,
 				7259C48F1380E99F002F7507 /* DLDelegate.h */,
@@ -86,6 +88,10 @@
 				7259C4851380E4EE002F7507 /* DLProperties.h */,
 				7259C4911380EA8B002F7507 /* DLTimer.h */,
 				7259C4921380EA8B002F7507 /* DLTimer.m */,
+				7259C4951380F4EA002F7507 /* NSArray+DispatchLogic.h */,
+				7259C4961380F4EB002F7507 /* NSArray+DispatchLogic.m */,
+				7259C47A1380DD49002F7507 /* NSObject+DispatchLogic.h */,
+				7259C47B1380DD49002F7507 /* NSObject+DispatchLogic.m */,
 				7259C46E1380D9AF002F7507 /* Supporting Files */,
 			);
 			path = DispatchLogic;
@@ -114,6 +120,7 @@
 				7259C48E1380E894002F7507 /* DLBlocks.h in Headers */,
 				7259C4901380E9A0002F7507 /* DLDelegate.h in Headers */,
 				7259C4931380EA8C002F7507 /* DLTimer.h in Headers */,
+				7259C4971380F4EC002F7507 /* NSArray+DispatchLogic.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +176,7 @@
 			files = (
 				7259C47D1380DD49002F7507 /* NSObject+DispatchLogic.m in Sources */,
 				7259C4941380EA8C002F7507 /* DLTimer.m in Sources */,
+				7259C4981380F4EC002F7507 /* NSArray+DispatchLogic.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
