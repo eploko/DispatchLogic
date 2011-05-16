@@ -6,14 +6,14 @@
 //  Copyright 2011 Plokodelika. All rights reserved.
 //
 
-#define DL_SAFELY_SYNC_BLOCK_ON_QUEUE(block, queue) \
+#define DLSafelySync(block, queue) \
     if (dispatch_get_current_queue() == queue) { \
         block(); \
     } else { \
         dispatch_sync(queue, block);\
     }
 
-#define DL_INLINE_ASYNC_BLOCK_ON_QUEUE(block, queue) \
+#define DLInlineAsync(block, queue) \
     if (dispatch_get_current_queue() == queue) { \
         block(); \
     } else { \

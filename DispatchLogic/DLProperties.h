@@ -8,7 +8,7 @@
 
 #pragma mark Property (nonatomic, retain)
 
-#define EPL_GCD_OBJ_NAR_GETTER(getterName, ivarType, ivarName, queue) \
+#define DLSynthesizeObjNARGetter(getterName, ivarType, ivarName, queue) \
     - (ivarType)getterName { \
         if (queue == NULL || dispatch_get_current_queue() == queue) { \
             return [[ivarName retain] autorelease]; \
@@ -21,7 +21,7 @@
         } \
     }
 
-#define EPL_GCD_OBJ_NAR_SETTER(setterName, ivarType, ivarName, queue) \
+#define DLSynthesizeObjNARSetter(setterName, ivarType, ivarName, queue) \
     - (void)setterName:(ivarType)value { \
         if (queue == NULL || dispatch_get_current_queue() == queue) { \
             [value retain]; \
@@ -36,16 +36,16 @@
         } \
     }
 
-#define EPL_GCD_OBJ_NAR_PROPERTY(getterName, setterName, ivarType, ivarName, queue) \
-    EPL_GCD_OBJ_NAR_GETTER(getterName, ivarType, ivarName, queue) \
-    EPL_GCD_OBJ_NAR_SETTER(setterName, ivarType, ivarName, queue)
+#define DLSynthesizeObjNARProperty(getterName, setterName, ivarType, ivarName, queue) \
+    DLSynthesizeObjNARGetter(getterName, ivarType, ivarName, queue) \
+    DLSynthesizeObjNARSetter(setterName, ivarType, ivarName, queue)
 
 #pragma mark Property (nonatomic, copy)
 
-#define EPL_GCD_OBJ_NAC_GETTER(getterName, ivarType, ivarName, queue) \
-    EPL_GCD_OBJ_NAR_GETTER(getterName, ivarType, ivarName, queue)
+#define DLSynthesizeObjNACGetter(getterName, ivarType, ivarName, queue) \
+    DLSynthesizeObjNARGetter(getterName, ivarType, ivarName, queue)
 
-#define EPL_GCD_OBJ_NAC_SETTER(setterName, ivarType, ivarName, queue) \
+#define DLSynthesizeObjNACSetter(setterName, ivarType, ivarName, queue) \
     - (void)setterName:(ivarType)value { \
         if (queue == NULL || dispatch_get_current_queue() == queue) { \
             [ivarName release]; \
@@ -58,13 +58,13 @@
         } \
     }
 
-#define EPL_GCD_OBJ_NAC_PROPERTY(getterName, setterName, ivarType, ivarName, queue) \
-    EPL_GCD_OBJ_NAC_GETTER(getterName, ivarType, ivarName, queue) \
-    EPL_GCD_OBJ_NAC_SETTER(setterName, ivarType, ivarName, queue)
+#define DLSynthesizeObjNACProperty(getterName, setterName, ivarType, ivarName, queue) \
+    DLSynthesizeObjNACGetter(getterName, ivarType, ivarName, queue) \
+    DLSynthesizeObjNACSetter(setterName, ivarType, ivarName, queue)
 
 #pragma mark Property (nonatomic, assign)
 
-#define EPL_GCD_OBJ_NAA_GETTER(getterName, ivarType, ivarName, queue) \
+#define DLSynthesizeObjNAAGetter(getterName, ivarType, ivarName, queue) \
     - (ivarType)getterName { \
         if (queue == NULL || dispatch_get_current_queue() == queue) { \
             return ivarName; \
@@ -77,7 +77,7 @@
         } \
     }
 
-#define EPL_GCD_OBJ_NAA_SETTER(setterName, ivarType, ivarName, queue) \
+#define DLSynthesizeObjNAASetter(setterName, ivarType, ivarName, queue) \
     - (void)setterName:(ivarType)value { \
         if (queue == NULL || dispatch_get_current_queue() == queue) { \
             ivarName = value; \
@@ -88,13 +88,13 @@
         } \
     }
 
-#define EPL_GCD_OBJ_NAA_PROPERTY(getterName, setterName, ivarType, ivarName, queue) \
-    EPL_GCD_OBJ_NAA_GETTER(getterName, ivarType, ivarName, queue) \
-    EPL_GCD_OBJ_NAA_SETTER(setterName, ivarType, ivarName, queue)
+#define DLSynthesizeObjNAAProperty(getterName, setterName, ivarType, ivarName, queue) \
+    DLSynthesizeObjNAAGetter(getterName, ivarType, ivarName, queue) \
+    DLSynthesizeObjNAASetter(setterName, ivarType, ivarName, queue)
 
 #pragma mark Property (nonatomic, assign)
 
-#define EPL_GCD_SIMPLE_NAA_GETTER(getterName, ivarType, ivarName, queue) \
+#define DLSynthesizeSimpleNAAGetter(getterName, ivarType, ivarName, queue) \
     - (ivarType)getterName { \
         if (queue == NULL || dispatch_get_current_queue() == queue) { \
             return ivarName; \
@@ -107,7 +107,7 @@
         } \
     }
 
-#define EPL_GCD_SIMPLE_NAA_SETTER(setterName, ivarType, ivarName, queue) \
+#define DLSynthesizeSimpleNAASetter(setterName, ivarType, ivarName, queue) \
     - (void)setterName:(ivarType)value { \
         if (queue == NULL || dispatch_get_current_queue() == queue) { \
             ivarName = value; \
@@ -118,13 +118,13 @@
         } \
     }
 
-#define EPL_GCD_SIMPLE_NAA_PROPERTY(getterName, setterName, ivarType, ivarName, queue) \
-    EPL_GCD_SIMPLE_NAA_GETTER(getterName, ivarType, ivarName, queue) \
-    EPL_GCD_SIMPLE_NAA_SETTER(setterName, ivarType, ivarName, queue)
+#define DLSynthesizeSimpleNAAProperty(getterName, setterName, ivarType, ivarName, queue) \
+    DLSynthesizeSimpleNAAGetter(getterName, ivarType, ivarName, queue) \
+    DLSynthesizeSimpleNAASetter(setterName, ivarType, ivarName, queue)
 
 #pragma mark dispatch_*_t Property (nonatomic, retain)
 
-#define EPL_GCD_DISPATCH_T_NAR_GETTER(getterName, ivarType, ivarName, queue) \
+#define DLSynthesizeDispatchNARGetter(getterName, ivarType, ivarName, queue) \
     - (ivarType)getterName { \
 	    if (dispatch_get_current_queue() == queue) { \
             return ivarName; \
@@ -137,7 +137,7 @@
 	    } \
     }
 
-#define EPL_GCD_DISPATCH_T_NAR_SETTER(setterName, ivarType, ivarName, queue) \
+#define DLSynthesizeDispatchNARSetter(setterName, ivarType, ivarName, queue) \
     - (void)setterName:(ivarType)value { \
 	    if (dispatch_get_current_queue() == queue) { \
 		    if (value) dispatch_retain(value); \
@@ -152,13 +152,13 @@
         } \
     }
 
-#define EPL_GCD_DISPATCH_T_NAR_PROPERTY(getterName, setterName, ivarType, ivarName, queue) \
-    EPL_GCD_DISPATCH_T_NAR_GETTER(getterName, ivarType, ivarName, queue) \
-    EPL_GCD_DISPATCH_T_NAR_SETTER(setterName, ivarType, ivarName, queue)
+#define DLSynthesizeDispatchNARProperty(getterName, setterName, ivarType, ivarName, queue) \
+    DLSynthesizeDispatchNARGetter(getterName, ivarType, ivarName, queue) \
+    DLSynthesizeDispatchNARSetter(setterName, ivarType, ivarName, queue)
 
 #pragma mark GCD Block Property (nonatomic, retain)
 
-#define EPL_GCD_BLOCK_GETTER(getterName, ivarType, ivarName, queue) \
+#define DLSynthesizeBlockGetter(getterName, ivarType, ivarName, queue) \
     - (ivarType)getterName { \
 	    if (dispatch_get_current_queue() == queue) { \
             return [[ivarName retain] autorelease]; \
@@ -171,7 +171,7 @@
 	    } \
     }
 
-#define EPL_GCD_BLOCK_SETTER(setterName, ivarType, ivarName, queue) \
+#define DLSynthesizeBlockSetter(setterName, ivarType, ivarName, queue) \
     - (void)setterName:(ivarType)value { \
 	    if (dispatch_get_current_queue() == queue) { \
             ivarType myCopy = [value copy]; \
@@ -186,6 +186,6 @@
         } \
     }
 
-#define EPL_GCD_BLOCK_PROPERTY(getterName, setterName, ivarType, ivarName, queue) \
-    EPL_GCD_BLOCK_GETTER(getterName, ivarType, ivarName, queue) \
-    EPL_GCD_BLOCK_SETTER(setterName, ivarType, ivarName, queue)
+#define DLSynthesizeBlockProperty(getterName, setterName, ivarType, ivarName, queue) \
+    DLSynthesizeBlockGetter(getterName, ivarType, ivarName, queue) \
+    DLSynthesizeBlockSetter(setterName, ivarType, ivarName, queue)

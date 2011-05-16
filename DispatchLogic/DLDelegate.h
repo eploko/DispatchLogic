@@ -9,18 +9,18 @@
 #import "DLBlocks.h"
 #import "DLProperties.h"
 
-#define EPL_GCD_DELEGATE_IVARS(protocolName) \
+#define DLDelegateIvars(protocolName) \
     id<protocolName> _delegate; \
     dispatch_queue_t _delegateQueue;
 
-#define EPL_GCD_DELEGATE_DECL(protocolName) \
+#define DLDelegateMethodDeclarations(protocolName) \
     - (void)setDelegate:(id<protocolName>)delegate queue:(dispatch_queue_t)queue;
 
-#define EPL_GCD_DELEGATE_PROPERTIES(protocolName) \
+#define DLDelegatePropertyDeclarations(protocolName) \
     @property (nonatomic, assign) id<protocolName> delegate; \
     @property (nonatomic, assign) dispatch_queue_t delegateQueue;
 
-#define EPL_GCD_DELEGATE_IMPL(protocolName, queueIvar) \
+#define DLDelegateImplementation(protocolName, queueIvar) \
     - (void)setDelegate:(id<protocolName>)delegate queue:(dispatch_queue_t)delegateQueue { \
         DLSimpleBlock block = ^{ \
             self.delegate = delegate; \
@@ -34,10 +34,10 @@
         } \
     } \
     \
-    EPL_GCD_OBJ_NAA_PROPERTY(delegate, setDelegate, id<protocolName>, _delegate, queueIvar) \
-    EPL_GCD_SIMPLE_NAA_PROPERTY(delegateQueue, setDelegateQueue, dispatch_queue_t, _delegateQueue, queueIvar)
+    DLSynthesizeObjNAAProperty(delegate, setDelegate, id<protocolName>, _delegate, queueIvar) \
+    DLSynthesizeSimpleNAAProperty(delegateQueue, setDelegateQueue, dispatch_queue_t, _delegateQueue, queueIvar)
 
-#define EPL_GCD_DELEGATE_RESET \
+#define DLDelegateReset() \
     { \
         _delegate = nil; \
         if (_delegateQueue) { \
