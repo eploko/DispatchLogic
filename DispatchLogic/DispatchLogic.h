@@ -5,3 +5,5 @@
 //  Created by Andrey Subbotin on 5/15/11.
 //  Copyright 2011 Plokodelika. All rights reserved.
 //
+
+#import "NSObject+DispatchLogic.h"
