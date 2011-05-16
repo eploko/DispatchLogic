@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		7259C46C1380D9AF002F7507 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7259C46B1380D9AF002F7507 /* Foundation.framework */; };
+		7259C4761380D9F9002F7507 /* DispatchLogic.h in Headers */ = {isa = PBXBuildFile; fileRef = 7259C4751380D9F9002F7507 /* DispatchLogic.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7259C4681380D9AF002F7507 /* libDispatchLogic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDispatchLogic.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7259C46B1380D9AF002F7507 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		7259C46F1380D9AF002F7507 /* DispatchLogic-Prefix.pch */ = {isa = PBXFileReference; path = "DispatchLogic-Prefix.pch"; sourceTree = "<group>"; };
+		7259C46F1380D9AF002F7507 /* DispatchLogic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DispatchLogic-Prefix.pch"; sourceTree = "<group>"; };
+		7259C4751380D9F9002F7507 /* DispatchLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchLogic.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		7259C46D1380D9AF002F7507 /* DispatchLogic */ = {
 			isa = PBXGroup;
 			children = (
+				7259C4751380D9F9002F7507 /* DispatchLogic.h */,
 				7259C46E1380D9AF002F7507 /* Supporting Files */,
 			);
 			path = DispatchLogic;
@@ -76,6 +79,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7259C4761380D9F9002F7507 /* DispatchLogic.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +109,7 @@
 		7259C45F1380D9AF002F7507 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				ORGANIZATIONNAME = "Mobile Platforms LLC";
+				ORGANIZATIONNAME = Plokodelika;
 			};
 			buildConfigurationList = 7259C4621380D9AF002F7507 /* Build configuration list for PBXProject "DispatchLogic" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -172,7 +176,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DispatchLogic/DispatchLogic-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = include/DispatchLogic/Private;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = include/DispatchLogic;
 			};
 			name = Debug;
 		};
@@ -184,7 +190,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DispatchLogic/DispatchLogic-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = include/DispatchLogic/Private;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = include/DispatchLogic;
 			};
 			name = Release;
 		};
