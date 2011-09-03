@@ -7,100 +7,119 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7259C46C1380D9AF002F7507 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7259C46B1380D9AF002F7507 /* Foundation.framework */; };
-		7259C4761380D9F9002F7507 /* DispatchLogic.h in Headers */ = {isa = PBXBuildFile; fileRef = 7259C4751380D9F9002F7507 /* DispatchLogic.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7259C47C1380DD49002F7507 /* NSObject+DispatchLogic.h in Headers */ = {isa = PBXBuildFile; fileRef = 7259C47A1380DD49002F7507 /* NSObject+DispatchLogic.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7259C47D1380DD49002F7507 /* NSObject+DispatchLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 7259C47B1380DD49002F7507 /* NSObject+DispatchLogic.m */; };
-		7259C4831380E3F2002F7507 /* DLAsserts.h in Headers */ = {isa = PBXBuildFile; fileRef = 7259C4821380E3F2002F7507 /* DLAsserts.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7259C4861380E4EE002F7507 /* DLProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 7259C4851380E4EE002F7507 /* DLProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7259C48C1380E61D002F7507 /* DLEnqueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 7259C48B1380E61D002F7507 /* DLEnqueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7259C48E1380E894002F7507 /* DLBlocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 7259C48D1380E893002F7507 /* DLBlocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7259C4901380E9A0002F7507 /* DLDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7259C48F1380E99F002F7507 /* DLDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7259C4931380EA8C002F7507 /* DLTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7259C4911380EA8B002F7507 /* DLTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7259C4941380EA8C002F7507 /* DLTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7259C4921380EA8B002F7507 /* DLTimer.m */; };
-		7259C4971380F4EC002F7507 /* NSArray+DispatchLogic.h in Headers */ = {isa = PBXBuildFile; fileRef = 7259C4951380F4EA002F7507 /* NSArray+DispatchLogic.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7259C4981380F4EC002F7507 /* NSArray+DispatchLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 7259C4961380F4EB002F7507 /* NSArray+DispatchLogic.m */; };
+		722BF27E1412F58000E101BD /* DLAsserts.h in Headers */ = {isa = PBXBuildFile; fileRef = 722BF2731412F58000E101BD /* DLAsserts.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		722BF27F1412F58000E101BD /* DLBlocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 722BF2741412F58000E101BD /* DLBlocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		722BF2801412F58000E101BD /* DLDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 722BF2751412F58000E101BD /* DLDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		722BF2811412F58000E101BD /* DLEnqueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 722BF2761412F58000E101BD /* DLEnqueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		722BF2821412F58000E101BD /* DLProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 722BF2771412F58000E101BD /* DLProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		722BF2831412F58000E101BD /* DLTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 722BF2781412F58000E101BD /* DLTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		722BF2841412F58000E101BD /* DLTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 722BF2791412F58000E101BD /* DLTimer.m */; };
+		722BF2851412F58000E101BD /* NSArray+DispatchLogic.h in Headers */ = {isa = PBXBuildFile; fileRef = 722BF27A1412F58000E101BD /* NSArray+DispatchLogic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		722BF2861412F58000E101BD /* NSArray+DispatchLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 722BF27B1412F58000E101BD /* NSArray+DispatchLogic.m */; };
+		722BF2871412F58000E101BD /* NSObject+DispatchLogic.h in Headers */ = {isa = PBXBuildFile; fileRef = 722BF27C1412F58000E101BD /* NSObject+DispatchLogic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		722BF2881412F58000E101BD /* NSObject+DispatchLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 722BF27D1412F58000E101BD /* NSObject+DispatchLogic.m */; };
+		722BF2891412F59400E101BD /* DispatchLogic.h in Headers */ = {isa = PBXBuildFile; fileRef = 72931CE71412F49800BBAC44 /* DispatchLogic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72931CDB1412F49800BBAC44 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72931CDA1412F49800BBAC44 /* Cocoa.framework */; };
+		72931CE51412F49800BBAC44 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 72931CE31412F49800BBAC44 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7259C4681380D9AF002F7507 /* libDispatchLogic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDispatchLogic.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		7259C46B1380D9AF002F7507 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		7259C46F1380D9AF002F7507 /* DispatchLogic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DispatchLogic-Prefix.pch"; sourceTree = "<group>"; };
-		7259C4751380D9F9002F7507 /* DispatchLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchLogic.h; sourceTree = "<group>"; };
-		7259C47A1380DD49002F7507 /* NSObject+DispatchLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DispatchLogic.h"; sourceTree = "<group>"; };
-		7259C47B1380DD49002F7507 /* NSObject+DispatchLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DispatchLogic.m"; sourceTree = "<group>"; };
-		7259C4821380E3F2002F7507 /* DLAsserts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLAsserts.h; sourceTree = "<group>"; };
-		7259C4851380E4EE002F7507 /* DLProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLProperties.h; sourceTree = "<group>"; };
-		7259C48B1380E61D002F7507 /* DLEnqueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLEnqueue.h; sourceTree = "<group>"; };
-		7259C48D1380E893002F7507 /* DLBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLBlocks.h; sourceTree = "<group>"; };
-		7259C48F1380E99F002F7507 /* DLDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLDelegate.h; sourceTree = "<group>"; };
-		7259C4911380EA8B002F7507 /* DLTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLTimer.h; sourceTree = "<group>"; };
-		7259C4921380EA8B002F7507 /* DLTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLTimer.m; sourceTree = "<group>"; };
-		7259C4951380F4EA002F7507 /* NSArray+DispatchLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+DispatchLogic.h"; sourceTree = "<group>"; };
-		7259C4961380F4EB002F7507 /* NSArray+DispatchLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+DispatchLogic.m"; sourceTree = "<group>"; };
+		722BF2731412F58000E101BD /* DLAsserts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLAsserts.h; sourceTree = "<group>"; };
+		722BF2741412F58000E101BD /* DLBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLBlocks.h; sourceTree = "<group>"; };
+		722BF2751412F58000E101BD /* DLDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLDelegate.h; sourceTree = "<group>"; };
+		722BF2761412F58000E101BD /* DLEnqueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLEnqueue.h; sourceTree = "<group>"; };
+		722BF2771412F58000E101BD /* DLProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLProperties.h; sourceTree = "<group>"; };
+		722BF2781412F58000E101BD /* DLTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLTimer.h; sourceTree = "<group>"; };
+		722BF2791412F58000E101BD /* DLTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLTimer.m; sourceTree = "<group>"; };
+		722BF27A1412F58000E101BD /* NSArray+DispatchLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+DispatchLogic.h"; sourceTree = "<group>"; };
+		722BF27B1412F58000E101BD /* NSArray+DispatchLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+DispatchLogic.m"; sourceTree = "<group>"; };
+		722BF27C1412F58000E101BD /* NSObject+DispatchLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DispatchLogic.h"; sourceTree = "<group>"; };
+		722BF27D1412F58000E101BD /* NSObject+DispatchLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DispatchLogic.m"; sourceTree = "<group>"; };
+		72931CD71412F49800BBAC44 /* DispatchLogic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DispatchLogic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72931CDA1412F49800BBAC44 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		72931CDD1412F49800BBAC44 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		72931CDE1412F49800BBAC44 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		72931CDF1412F49800BBAC44 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		72931CE21412F49800BBAC44 /* DispatchLogic-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DispatchLogic-Info.plist"; sourceTree = "<group>"; };
+		72931CE41412F49800BBAC44 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		72931CE61412F49800BBAC44 /* DispatchLogic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DispatchLogic-Prefix.pch"; sourceTree = "<group>"; };
+		72931CE71412F49800BBAC44 /* DispatchLogic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchLogic.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7259C4651380D9AF002F7507 /* Frameworks */ = {
+		72931CD31412F49800BBAC44 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7259C46C1380D9AF002F7507 /* Foundation.framework in Frameworks */,
+				72931CDB1412F49800BBAC44 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7259C45D1380D9AF002F7507 = {
+		72931CCB1412F49800BBAC44 = {
 			isa = PBXGroup;
 			children = (
-				7259C46D1380D9AF002F7507 /* DispatchLogic */,
-				7259C46A1380D9AF002F7507 /* Frameworks */,
-				7259C4691380D9AF002F7507 /* Products */,
+				72931CE01412F49800BBAC44 /* DispatchLogic */,
+				72931CD91412F49800BBAC44 /* Frameworks */,
+				72931CD81412F49800BBAC44 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		7259C4691380D9AF002F7507 /* Products */ = {
+		72931CD81412F49800BBAC44 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7259C4681380D9AF002F7507 /* libDispatchLogic.a */,
+				72931CD71412F49800BBAC44 /* DispatchLogic.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7259C46A1380D9AF002F7507 /* Frameworks */ = {
+		72931CD91412F49800BBAC44 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7259C46B1380D9AF002F7507 /* Foundation.framework */,
+				72931CDA1412F49800BBAC44 /* Cocoa.framework */,
+				72931CDC1412F49800BBAC44 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7259C46D1380D9AF002F7507 /* DispatchLogic */ = {
+		72931CDC1412F49800BBAC44 /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7259C4751380D9F9002F7507 /* DispatchLogic.h */,
-				7259C4821380E3F2002F7507 /* DLAsserts.h */,
-				7259C48D1380E893002F7507 /* DLBlocks.h */,
-				7259C48F1380E99F002F7507 /* DLDelegate.h */,
-				7259C48B1380E61D002F7507 /* DLEnqueue.h */,
-				7259C4851380E4EE002F7507 /* DLProperties.h */,
-				7259C4911380EA8B002F7507 /* DLTimer.h */,
-				7259C4921380EA8B002F7507 /* DLTimer.m */,
-				7259C4951380F4EA002F7507 /* NSArray+DispatchLogic.h */,
-				7259C4961380F4EB002F7507 /* NSArray+DispatchLogic.m */,
-				7259C47A1380DD49002F7507 /* NSObject+DispatchLogic.h */,
-				7259C47B1380DD49002F7507 /* NSObject+DispatchLogic.m */,
-				7259C46E1380D9AF002F7507 /* Supporting Files */,
+				72931CDD1412F49800BBAC44 /* AppKit.framework */,
+				72931CDE1412F49800BBAC44 /* CoreData.framework */,
+				72931CDF1412F49800BBAC44 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		72931CE01412F49800BBAC44 /* DispatchLogic */ = {
+			isa = PBXGroup;
+			children = (
+				72931CE71412F49800BBAC44 /* DispatchLogic.h */,
+				722BF2731412F58000E101BD /* DLAsserts.h */,
+				722BF2741412F58000E101BD /* DLBlocks.h */,
+				722BF2751412F58000E101BD /* DLDelegate.h */,
+				722BF2761412F58000E101BD /* DLEnqueue.h */,
+				722BF2771412F58000E101BD /* DLProperties.h */,
+				722BF2781412F58000E101BD /* DLTimer.h */,
+				722BF2791412F58000E101BD /* DLTimer.m */,
+				722BF27A1412F58000E101BD /* NSArray+DispatchLogic.h */,
+				722BF27B1412F58000E101BD /* NSArray+DispatchLogic.m */,
+				722BF27C1412F58000E101BD /* NSObject+DispatchLogic.h */,
+				722BF27D1412F58000E101BD /* NSObject+DispatchLogic.m */,
+				72931CE11412F49800BBAC44 /* Supporting Files */,
 			);
 			path = DispatchLogic;
 			sourceTree = "<group>";
 		};
-		7259C46E1380D9AF002F7507 /* Supporting Files */ = {
+		72931CE11412F49800BBAC44 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7259C46F1380D9AF002F7507 /* DispatchLogic-Prefix.pch */,
+				72931CE21412F49800BBAC44 /* DispatchLogic-Info.plist */,
+				72931CE31412F49800BBAC44 /* InfoPlist.strings */,
+				72931CE61412F49800BBAC44 /* DispatchLogic-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -108,32 +127,33 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		7259C4661380D9AF002F7507 /* Headers */ = {
+		72931CD41412F49800BBAC44 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7259C4761380D9F9002F7507 /* DispatchLogic.h in Headers */,
-				7259C47C1380DD49002F7507 /* NSObject+DispatchLogic.h in Headers */,
-				7259C4831380E3F2002F7507 /* DLAsserts.h in Headers */,
-				7259C4861380E4EE002F7507 /* DLProperties.h in Headers */,
-				7259C48C1380E61D002F7507 /* DLEnqueue.h in Headers */,
-				7259C48E1380E894002F7507 /* DLBlocks.h in Headers */,
-				7259C4901380E9A0002F7507 /* DLDelegate.h in Headers */,
-				7259C4931380EA8C002F7507 /* DLTimer.h in Headers */,
-				7259C4971380F4EC002F7507 /* NSArray+DispatchLogic.h in Headers */,
+				722BF27E1412F58000E101BD /* DLAsserts.h in Headers */,
+				722BF27F1412F58000E101BD /* DLBlocks.h in Headers */,
+				722BF2801412F58000E101BD /* DLDelegate.h in Headers */,
+				722BF2811412F58000E101BD /* DLEnqueue.h in Headers */,
+				722BF2821412F58000E101BD /* DLProperties.h in Headers */,
+				722BF2831412F58000E101BD /* DLTimer.h in Headers */,
+				722BF2851412F58000E101BD /* NSArray+DispatchLogic.h in Headers */,
+				722BF2871412F58000E101BD /* NSObject+DispatchLogic.h in Headers */,
+				722BF2891412F59400E101BD /* DispatchLogic.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		7259C4671380D9AF002F7507 /* DispatchLogic */ = {
+		72931CD61412F49800BBAC44 /* DispatchLogic */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7259C4721380D9AF002F7507 /* Build configuration list for PBXNativeTarget "DispatchLogic" */;
+			buildConfigurationList = 72931CEC1412F49800BBAC44 /* Build configuration list for PBXNativeTarget "DispatchLogic" */;
 			buildPhases = (
-				7259C4641380D9AF002F7507 /* Sources */,
-				7259C4651380D9AF002F7507 /* Frameworks */,
-				7259C4661380D9AF002F7507 /* Headers */,
+				72931CD21412F49800BBAC44 /* Sources */,
+				72931CD31412F49800BBAC44 /* Frameworks */,
+				72931CD41412F49800BBAC44 /* Headers */,
+				72931CD51412F49800BBAC44 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -141,130 +161,166 @@
 			);
 			name = DispatchLogic;
 			productName = DispatchLogic;
-			productReference = 7259C4681380D9AF002F7507 /* libDispatchLogic.a */;
-			productType = "com.apple.product-type.library.static";
+			productReference = 72931CD71412F49800BBAC44 /* DispatchLogic.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7259C45F1380D9AF002F7507 /* Project object */ = {
+		72931CCD1412F49800BBAC44 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0420;
-				ORGANIZATIONNAME = Plokodelika;
+				ORGANIZATIONNAME = "Mobile Platforms LLC";
 			};
-			buildConfigurationList = 7259C4621380D9AF002F7507 /* Build configuration list for PBXProject "DispatchLogic" */;
+			buildConfigurationList = 72931CD01412F49800BBAC44 /* Build configuration list for PBXProject "DispatchLogic" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 7259C45D1380D9AF002F7507;
-			productRefGroup = 7259C4691380D9AF002F7507 /* Products */;
+			mainGroup = 72931CCB1412F49800BBAC44;
+			productRefGroup = 72931CD81412F49800BBAC44 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7259C4671380D9AF002F7507 /* DispatchLogic */,
+				72931CD61412F49800BBAC44 /* DispatchLogic */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		72931CD51412F49800BBAC44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72931CE51412F49800BBAC44 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		7259C4641380D9AF002F7507 /* Sources */ = {
+		72931CD21412F49800BBAC44 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7259C47D1380DD49002F7507 /* NSObject+DispatchLogic.m in Sources */,
-				7259C4941380EA8C002F7507 /* DLTimer.m in Sources */,
-				7259C4981380F4EC002F7507 /* NSArray+DispatchLogic.m in Sources */,
+				722BF2841412F58000E101BD /* DLTimer.m in Sources */,
+				722BF2861412F58000E101BD /* NSArray+DispatchLogic.m in Sources */,
+				722BF2881412F58000E101BD /* NSObject+DispatchLogic.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		72931CE31412F49800BBAC44 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72931CE41412F49800BBAC44 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		7259C4701380D9AF002F7507 /* Debug */ = {
+		72931CEA1412F49800BBAC44 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				SDKROOT = iphoneos;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
-		7259C4711380D9AF002F7507 /* Release */ = {
+		72931CEB1412F49800BBAC44 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				SDKROOT = iphoneos;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		7259C4731380D9AF002F7507 /* Debug */ = {
+		72931CED1412F49800BBAC44 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				DSTROOT = /tmp/DispatchLogic.dst;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DispatchLogic/DispatchLogic-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
-				PRIVATE_HEADERS_FOLDER_PATH = include/DispatchLogic/Private;
+				INFOPLIST_FILE = "DispatchLogic/DispatchLogic-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = include/DispatchLogic;
+				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
 		};
-		7259C4741380D9AF002F7507 /* Release */ = {
+		72931CEE1412F49800BBAC44 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				DSTROOT = /tmp/DispatchLogic.dst;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DispatchLogic/DispatchLogic-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
-				PRIVATE_HEADERS_FOLDER_PATH = include/DispatchLogic/Private;
+				INFOPLIST_FILE = "DispatchLogic/DispatchLogic-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = include/DispatchLogic;
+				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7259C4621380D9AF002F7507 /* Build configuration list for PBXProject "DispatchLogic" */ = {
+		72931CD01412F49800BBAC44 /* Build configuration list for PBXProject "DispatchLogic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7259C4701380D9AF002F7507 /* Debug */,
-				7259C4711380D9AF002F7507 /* Release */,
+				72931CEA1412F49800BBAC44 /* Debug */,
+				72931CEB1412F49800BBAC44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7259C4721380D9AF002F7507 /* Build configuration list for PBXNativeTarget "DispatchLogic" */ = {
+		72931CEC1412F49800BBAC44 /* Build configuration list for PBXNativeTarget "DispatchLogic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7259C4731380D9AF002F7507 /* Debug */,
-				7259C4741380D9AF002F7507 /* Release */,
+				72931CED1412F49800BBAC44 /* Debug */,
+				72931CEE1412F49800BBAC44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 7259C45F1380D9AF002F7507 /* Project object */;
+	rootObject = 72931CCD1412F49800BBAC44 /* Project object */;
 }
