@@ -6,7 +6,7 @@
 //  Copyright 2011 Plokodelika. All rights reserved.
 //
 
-#pragma mark Property (nonatomic, retain)
+#pragma mark - Property (nonatomic, retain)
 
 #define DLSynthesizeObjNARGetter(getterName, ivarType, ivarName, queue) \
     - (ivarType)getterName { \
@@ -40,7 +40,7 @@
     DLSynthesizeObjNARGetter(getterName, ivarType, ivarName, queue) \
     DLSynthesizeObjNARSetter(setterName, ivarType, ivarName, queue)
 
-#pragma mark Property (nonatomic, copy)
+#pragma mark - Property (nonatomic, copy)
 
 #define DLSynthesizeObjNACGetter(getterName, ivarType, ivarName, queue) \
     DLSynthesizeObjNARGetter(getterName, ivarType, ivarName, queue)
@@ -62,7 +62,7 @@
     DLSynthesizeObjNACGetter(getterName, ivarType, ivarName, queue) \
     DLSynthesizeObjNACSetter(setterName, ivarType, ivarName, queue)
 
-#pragma mark Property (nonatomic, assign)
+#pragma mark - Property (nonatomic, assign)
 
 #define DLSynthesizeObjNAAGetter(getterName, ivarType, ivarName, queue) \
     - (ivarType)getterName { \
@@ -92,7 +92,7 @@
     DLSynthesizeObjNAAGetter(getterName, ivarType, ivarName, queue) \
     DLSynthesizeObjNAASetter(setterName, ivarType, ivarName, queue)
 
-#pragma mark Property (nonatomic, assign)
+#pragma mark - Property (nonatomic, assign)
 
 #define DLSynthesizeSimpleNAAGetter(getterName, ivarType, ivarName, queue) \
     - (ivarType)getterName { \
@@ -122,7 +122,7 @@
     DLSynthesizeSimpleNAAGetter(getterName, ivarType, ivarName, queue) \
     DLSynthesizeSimpleNAASetter(setterName, ivarType, ivarName, queue)
 
-#pragma mark dispatch_*_t Property (nonatomic, retain)
+#pragma mark - dispatch_*_t Property (nonatomic, retain)
 
 #define DLSynthesizeDispatchNARGetter(getterName, ivarType, ivarName, queue) \
     - (ivarType)getterName { \
@@ -156,7 +156,7 @@
     DLSynthesizeDispatchNARGetter(getterName, ivarType, ivarName, queue) \
     DLSynthesizeDispatchNARSetter(setterName, ivarType, ivarName, queue)
 
-#pragma mark GCD Block Property (nonatomic, retain)
+#pragma mark - GCD Block Property (nonatomic, retain)
 
 #define DLSynthesizeBlockGetter(getterName, ivarType, ivarName, queue) \
     - (ivarType)getterName { \

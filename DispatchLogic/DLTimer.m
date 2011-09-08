@@ -11,7 +11,7 @@
 
 @implementation DLTimer
 
-#pragma mark Life-cycle management
+#pragma mark - Life-cycle management
 
 - (id)initWithTimeout:(NSTimeInterval)timeout queue:(dispatch_queue_t)queue block:(DLSimpleBlock)block {
     if ((self = [super init])) {
@@ -46,7 +46,7 @@
     [super dealloc];
 }
 
-#pragma mark Public methods
+#pragma mark - Public methods
 
 - (void)invalidate {
     @synchronized (self) {
